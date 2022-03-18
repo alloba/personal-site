@@ -16,9 +16,9 @@ Terraform Apply:
     AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
     AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
   before_script:
-    - terraform init
-  script:
     - cd terraform
+  script:
+    - terraform init
     - terraform apply --auto-approve
   dependencies: [ ]
 
