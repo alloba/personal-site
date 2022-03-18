@@ -7,10 +7,16 @@ Terraform Apply:
   stage: infra-apply
   only:
     - main
-  image: hashicorp/terraform:latest #i_too_like_to_live_dangerously.gif
+  image:
+    name: hashicorp/terraform:latest #i_too_like_to_live_dangerously.gif
+    entrypoint:
+      - /usr/bin/env
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
   variables:
     AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
     AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+  before_script:
+    - terraform init
   script:
     - terraform apply --auto-approve
   dependencies: [ ]
