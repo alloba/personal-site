@@ -14,6 +14,9 @@
 # production
 /build
 
+# terraform
+terraform/.terraform
+
 # misc
 .DS_Store
 .env.local
