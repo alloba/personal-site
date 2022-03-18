@@ -26,10 +26,13 @@ const headerRoutes = headerSections.map(section =>
 function App() {
     return (
         <div className="App">
-            <div className={'header-section'}>
-                <ul className={'header-links'}>{headerLinks}</ul>
-            </div>
+
+            {/*Menu Header*/}
+            <div className={'header-section'}><ul className={'header-links'}>{headerLinks}</ul></div>
+
+            {/*Route Content*/}
             <Routes>{headerRoutes}</Routes>
+
         </div>
     );
 }
