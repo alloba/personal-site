@@ -3,5 +3,9 @@ resource "aws_route53_record" "primary-website-record" {
   type    = "A"
   zone_id = data.aws_route53_zone.primary-domain.id
 
-  ttl = 60
+  alias {
+    name                   = aws_s3_bucket.website-bucket.bucket
+    zone_id                = aws_s3_bucket.website-bucket.hosted_zone_id
+    evaluate_target_health = true
+  }
 }
