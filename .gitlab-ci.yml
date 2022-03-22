@@ -49,6 +49,6 @@ Deploy Site:
     AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
     AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
   script:
-    - aws s3 sync build s3://alloba-personal-landing-site-default --delete
+    - aws s3 sync build s3://alexlbates.com --delete
   dependencies:
     - React Build
