@@ -1,0 +1,21 @@
+.list-item {
+    text-decoration: none;
+    color: #93B7BE;
+    font-weight: bold;
+}
+
+.list-item-noclick {
+    text-decoration: none;
+    color: #63888d;
+    font-weight: bold;
+}
+
+.project-table-div {
+    width: 60%;
+}
+
+table { text-align: left}
+table td { padding-bottom: 1em;}
+table td:nth-child(1) { vertical-align: top; }
+table td:nth-child(2) { vertical-align: top; }
+
