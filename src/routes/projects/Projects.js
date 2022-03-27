@@ -23,13 +23,17 @@ const projectList = [
 
 export default function Projects() {
     return (
-        <div >
+        <div>
             <table className={'project-table-div'}>
-                <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                </tr>
-                {renderProjectListElements()}
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {renderProjectListElements()}
+                </tbody>
             </table>
         </div>
     )
@@ -41,9 +45,7 @@ export default function Projects() {
  * @returns {*[]}
  */
 function renderProjectListElements() {
-    return projectList.map(entry =>
-        renderSingleProjectListElement(entry)
-    )
+    return projectList.map(entry => renderSingleProjectListElement(entry))
 }
 
 /**

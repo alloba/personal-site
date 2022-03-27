@@ -1,40 +1,40 @@
 import './App.css';
 
-import Home from "./home/Home";
-import Projects from "./projects/Projects";
+import Home from "./routes/home/Home";
+import Projects from "./routes/projects/Projects";
 import {
     Routes,
-    Route,
-    Link
+    Route
 } from 'react-router-dom'
+import MenuTop from "./components/MenuTop/MenuTop";
+import {NavigationComponent} from "./data-structures/NavigationComponent";
 
-
-const headerSections = [
-    {title: 'Home', location: '/', component: <Home/>},
-    {title: 'Projects', location: '/projects', component: <Projects/>}
-]
-const headerLinks = headerSections.map(section =>
-    <li className={'header-list-item'} key={section.title}>
-        <Link className={'header-list-link'} to={section.location}>{section.title}</Link>
-    </li>
-)
-const headerRoutes = headerSections.map(section =>
-    <Route key={section.title} path={section.location} element={section.component}>{section.title}</Route>
-)
-
-
+/**
+ * Entrypoint into the React site.
+ * All that happens here is the creation of a menu, a route render area, and a list of objects to populate both.
+ *
+ * Simply create/maintain a list of NavigationComponent objects,
+ * and they will be fed into both the page menu and the Router for the site.
+ *
+ * @returns {JSX.Element}
+ * @constructor
+ */
 function App() {
     return (
         <div className="App">
-
-            {/*Menu Header*/}
-            <div className={'header-section'}><ul className={'header-links'}>{headerLinks}</ul></div>
-
-            {/*Route Content*/}
-            <Routes>{headerRoutes}</Routes>
-
+            <MenuTop menuObjects={menuItems}/>
+            <Routes>{routes}</Routes>
         </div>
     );
 }
+
+const menuItems = [
+    new NavigationComponent('Home', 'Home page for website', '/', <Home/>),
+    new NavigationComponent('Projects', 'Projects page', '/projects', <Projects/>)
+]
+
+const routes = menuItems.map(item =>
+    <Route key={item.title} path={item.link} element={item.component}>{item.title}</Route>
+)
 
 export default App;

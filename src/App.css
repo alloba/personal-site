@@ -2,29 +2,3 @@
   text-align: center;
 }
 
-.header-section {
-  background: #1c1c28;
-}
-
-ul.header-links {
-  display: flex;
-  align-items: stretch; /* Default */
-  justify-content: flex-start;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-li.header-list-item {
-  list-style-type: none;
-  display: block;
-  flex: 0 1 auto; /* Default */
-  padding: 1em;
-}
-
-a.header-list-link {
-  text-decoration: none;
-  color: #F194B4;
-  font-size: 1.2em;
-  font-weight: bold;
-}

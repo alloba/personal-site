@@ -1,0 +1,28 @@
+.MenuTop {}
+
+.header-section {
+    background: #1c1c28;
+}
+
+ul {
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    display: block;
+    flex: 0 1 auto; /* Default */
+    padding: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #F194B4;
+    font-size: 1.2em;
+    font-weight: bold;
+}
