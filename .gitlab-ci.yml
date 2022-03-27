@@ -31,7 +31,7 @@ React Build:
   cache:
     key:
       files:
-        - package.lock.json
+        - package-lock.json
     paths:
       - .npm/
   script:
