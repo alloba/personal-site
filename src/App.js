@@ -8,7 +8,6 @@ import {
 } from 'react-router-dom'
 import MenuTop from "./components/MenuTop/MenuTop";
 import {NavigationComponent} from "./data-structures/NavigationComponent";
-import MarkdownTest from "./routes/MarkdownTest/MarkdownTest";
 
 /**
  * Entrypoint into the React site.
@@ -32,7 +31,6 @@ function App() {
 const menuItems = [
     new NavigationComponent('Home', 'Home page for website', '/', <Home/>),
     new NavigationComponent('Projects', 'Projects page', '/projects', <Projects/>),
-    new NavigationComponent('Markdown Test', 'Testing markdown rendering', 'markdown-test', <MarkdownTest/>)
 ]
 
 const routes = menuItems.map(item =>
