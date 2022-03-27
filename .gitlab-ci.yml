@@ -28,8 +28,14 @@ React Build:
   only:
     - main
   image: node:17
+  cache:
+    key:
+      files:
+        - package.lock.json
+    paths:
+      - .npm/
   script:
-    - npm install
+    - npm ci --cache .npm --prefer-offline
     - npm run build
   artifacts:
     paths:
