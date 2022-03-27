@@ -16,7 +16,7 @@ const projectList = [
     {
         name: 'WSG Scraper',
         description: 'Download Webm files from 4chan based on thread and search-term, and automatically upload to S3.',
-        link: 'TODO_SECURE_THIS_PROJECT'
+        link: '//gitlab.com/alloba/kaleidoscope-combined'
     },
 ]
 
