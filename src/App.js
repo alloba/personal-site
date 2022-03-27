@@ -7,6 +7,7 @@ import MenuTop from "./components/MenuTop/MenuTop";
 import Home from "./routes/home/Home";
 import Projects from "./routes/projects/Projects";
 import About from "./routes/About/About";
+import PointMapVisualization from "./routes/PointMapVisualization/PointMapVisualization";
 
 /**
  * Entrypoint into the React site.
@@ -32,7 +33,8 @@ function App() {
 const menuItems = [
     new NavigationComponent('Home', 'Home page for website', '/', <Home/>),
     new NavigationComponent('Projects', 'Projects page', '/projects', <Projects/>),
-    new NavigationComponent('About', 'About me.', '/about', <About/>)
+    new NavigationComponent('About', 'About me.', '/about', <About/>),
+    new NavigationComponent('CanvasTest', 'Testing Canvas Api for Visuals.', '/canvas-test', <PointMapVisualization/>)
 ]
 
 const routes = menuItems.map(item =>

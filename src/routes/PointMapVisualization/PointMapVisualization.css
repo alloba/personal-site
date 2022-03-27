@@ -1,0 +1,9 @@
+.CanvasTest {
+    position: relative;
+    height: 93vh;
+}
+
+#canvas-test-surface{
+    width: 100%;
+    height: 100%;
+}
