@@ -2,8 +2,15 @@ import './Projects.css'
 
 const projectList = [
     {
+        name: 'Personal Landing Site',
+        description: 'This website! I slightly intend for this site to be a jumping off point for anything else that ' +
+            'has an online presence. It\'s still shaping up though.',
+        link: '//gitlab.com/alloba/personal-landing-site'
+    },
+    {
         name: 'Kaleidoscope',
-        description: 'Random media player',
+        description: 'Random media player website. This currently holds the record for longest-lived personal project of mine, ' +
+            'in terms of uptime and actual usage.',
         link: '//kaleidoscope.alexlbates.com'
     },
     {
@@ -18,6 +25,21 @@ const projectList = [
         description: 'Download Webm files from 4chan based on thread and search-term, and automatically upload to S3.',
         link: '//gitlab.com/alloba/kaleidoscope-combined'
     },
+    {
+        name: 'Terraform Zoo',
+        description: 'Sample projects for Terraform managed infrastructure. Honestly it\'s a bit dated at this point - ' +
+            'I now consider the purpose of the project to be consolidation of reference materials and notes rather than ' +
+            'any kind of production ready thing.',
+        link: '//gitlab.com/alloba/terraform-examples'
+    },
+    {
+        name: 'Documentation Website',
+        description: 'An auto-publishing website for all the notes I would take. ' +
+            'Currently defunct, although I do remember it fondly. ' +
+            'This project is competing for space in my brain with this website and Obsidian... ' +
+            'Still not sure how I ultimately want my note-taking to live on. It changes with the seasons.',
+        link: ''
+    }
 ]
 
 
