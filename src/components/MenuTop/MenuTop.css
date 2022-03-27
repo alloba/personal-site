@@ -1,10 +1,10 @@
-.MenuTop {}
-
-.header-section {
+.MenuTop {
     background: #1c1c28;
+    padding-top: 0%;
 }
 
-ul {
+
+ul.menu-top-list {
     display: flex;
     align-items: stretch; /* Default */
     justify-content: flex-start;
@@ -13,14 +13,14 @@ ul {
     padding: 0;
 }
 
-li {
+li.menu-top-list-item {
     list-style-type: none;
     display: block;
     flex: 0 1 auto; /* Default */
     padding: 1em;
 }
 
-a {
+a.menu-top-anchor {
     text-decoration: none;
     color: #F194B4;
     font-size: 1.2em;

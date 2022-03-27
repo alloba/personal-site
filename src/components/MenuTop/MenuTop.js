@@ -4,9 +4,7 @@ import {Link} from "react-router-dom";
 
 const MenuTop = ({menuObjects}) => (
     <div className="MenuTop">
-        <ul>
-            {generateMenu(menuObjects)}
-        </ul>
+        {generateMenu(menuObjects)}
     </div>
 );
 
@@ -18,7 +16,7 @@ const MenuTop = ({menuObjects}) => (
  */
 function generateMenu(menuObjects) {
     const menuList = menuObjects.map(item => generateMenuItem(item))
-    return (<ul>{menuList}</ul>)
+    return (<ul className={'menu-top-list'}>{menuList}</ul>)
 }
 
 /**
@@ -28,8 +26,8 @@ function generateMenu(menuObjects) {
  */
 function generateMenuItem(itemObject) {
     return (
-        <li key={itemObject.title}>
-            <Link className={'header-list-link'}
+        <li className={'menu-top-list-item'} key={itemObject.title}>
+            <Link className={'menu-top-anchor'}
                   to={itemObject.link}
                   title={itemObject.description}>
                 {itemObject.title}
