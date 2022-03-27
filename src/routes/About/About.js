@@ -7,12 +7,14 @@ const About = () => (
       <p>I'm just like... a guy, my dude.</p>
 
       <ul>
-          <li><a href={'https://gitlab.com/alloba'}> Fullstack Developer</a></li>
+          <li>
+              <a href={'https://www.linkedin.com/in/alexanderlbates/'}> Fullstack Developer</a> (with projects on <a href={'https://gitlab.com/alloba'}>GitLab</a>)
+          </li>
           <li><a href={'https://anilist.co/user/alloba/'}>Enjoyer of Trash Anime</a></li>
           <li><a href={'https://open.spotify.com/user/alloba0'}>Garbage Music Connoisseur</a></li>
       </ul>
 
-      <p>All of these titles are appropriate, as are many others.</p>
+      <p>All of these things are true.</p>
   </div>
 );
 
