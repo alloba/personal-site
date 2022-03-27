@@ -36,9 +36,4 @@ function generateMenuItem(itemObject) {
     )
 }
 
-
-MenuTop.propTypes = {};
-
-MenuTop.defaultProps = {};
-
 export default MenuTop;

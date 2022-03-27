@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './About.css';
 
 const About = () => (
@@ -16,9 +15,5 @@ const About = () => (
       <p>All of these titles are appropriate, as are many others.</p>
   </div>
 );
-
-About.propTypes = {};
-
-About.defaultProps = {};
 
 export default About;
