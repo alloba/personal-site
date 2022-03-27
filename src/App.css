@@ -1,4 +1,13 @@
 .App {
-  text-align: center;
+
 }
 
+.routes {
+    padding: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #F194B4;
+    font-weight: bold;
+}

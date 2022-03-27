@@ -1,4 +1,4 @@
-export class NavigationComponent {
+export default class NavigationComponent {
     constructor(name = '', description = '', link = '', component = undefined) {
         this.title = name
         this.description = description

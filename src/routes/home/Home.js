@@ -1,8 +1,13 @@
+import './Home.css'
+
 function Home() {
     return (
-        <div>
-            <h1>Landing Site Boom!!</h1>
-            <p>Behold a placeholder.</p>
+        <div className={'Home'}>
+            <h1>You found me!</h1>
+            <p>
+                There currently isn't much to this website, although I have big hypothetical ambitions connected to
+                it.
+            </p>
         </div>
     )
 }

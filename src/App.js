@@ -1,13 +1,11 @@
 import './App.css';
+import {Routes, Route} from 'react-router-dom'
 
+import NavigationComponent from "./data-structures/NavigationComponent";
+import MenuTop from "./components/MenuTop/MenuTop";
 import Home from "./routes/home/Home";
 import Projects from "./routes/projects/Projects";
-import {
-    Routes,
-    Route
-} from 'react-router-dom'
-import MenuTop from "./components/MenuTop/MenuTop";
-import {NavigationComponent} from "./data-structures/NavigationComponent";
+import About from "./routes/About/About";
 
 /**
  * Entrypoint into the React site.
@@ -23,7 +21,9 @@ function App() {
     return (
         <div className="App">
             <MenuTop menuObjects={menuItems}/>
-            <Routes>{routes}</Routes>
+            <div className={'routes'}>
+                <Routes>{routes}</Routes>
+            </div>
         </div>
     );
 }
@@ -31,6 +31,7 @@ function App() {
 const menuItems = [
     new NavigationComponent('Home', 'Home page for website', '/', <Home/>),
     new NavigationComponent('Projects', 'Projects page', '/projects', <Projects/>),
+    new NavigationComponent('About', 'About me.', '/about', <About/>)
 ]
 
 const routes = menuItems.map(item =>
