@@ -1,12 +1,12 @@
 .list-item {
     text-decoration: none;
-    color: #93B7BE;
+    color: var(--text-accent-light);
     font-weight: bold;
 }
 
 .list-item-noclick {
     text-decoration: none;
-    color: #63888d;
+    color: var(--text-accent-dark);
     font-weight: bold;
 }
 

@@ -1,5 +1,5 @@
 .MenuTop {
-    background: #1c1c28;
+    background: var(--background-dark);
 }
 
 
@@ -21,7 +21,7 @@ li.menu-top-list-item {
 
 a.menu-top-anchor {
     text-decoration: none;
-    color: #F194B4;
+    color: var(--text-accent-pop);
     font-size: 1.2em;
     font-weight: bold;
 }
