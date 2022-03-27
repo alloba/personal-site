@@ -12,6 +12,7 @@
 
 .project-table-div {
     width: 60%;
+    min-width: 25em;
 }
 
 table { text-align: left}

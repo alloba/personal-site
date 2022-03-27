@@ -1,6 +1,7 @@
 .MenuTop {
     background: var(--background-dark);
     height: 5vh;
+    min-height: 3em;
 }
 
 
