@@ -1,5 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import './PointMapVisualization.css';
+import {Box} from "@chakra-ui/react";
 
 // Generally useful for creating this: https://medium.com/@pdx.lucasm/canvas-with-react-js-32e133c05258
 
@@ -39,9 +40,9 @@ const PointMapVisualization = () => {
     }, [])
 
     return (
-        <div className="CanvasTest">
+        <Box className="CanvasTest">
             <canvas ref={canvasRef} id={'canvas-test-surface'}>Cannot Render Canvas</canvas>
-        </div>
+        </Box>
     )
 };
 

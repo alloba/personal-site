@@ -1,5 +1,5 @@
 import React from 'react';
-import './Projects.css'
+import {Box, Heading, Link, Table, Tbody, Td, Text, Th, Thead, Tr} from "@chakra-ui/react";
 
 const projectList = [
     {
@@ -43,25 +43,6 @@ const projectList = [
     }
 ]
 
-
-export default function Projects() {
-    return (
-        <div>
-            <table className={'project-table-div'}>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {renderProjectListElements()}
-                </tbody>
-            </table>
-        </div>
-    )
-}
-
 /**
  * Convert a list of project objects into a table row
  * Just composes single entries (refer to single element version for details)
@@ -81,17 +62,37 @@ function renderProjectListElements() {
 function renderSingleProjectListElement(projectItem) {
     if (projectItem.link) {
         return (
-            <tr key={projectItem.name}>
-                <td><a className={'list-item'} href={projectItem.link}>{projectItem.name}</a></td>
-                <td>{projectItem.description}</td>
-            </tr>
+            <Tr key={projectItem.name}>
+                <Td color={'blue.200'} fontWeight={'bold'}><Link className={'list-item'} href={projectItem.link}>{projectItem.name}</Link></Td>
+                <Td>{projectItem.description}</Td>
+            </Tr>
         )
     } else {
         return (
-            <tr key={projectItem.name}>
-                <td className={'list-item-noclick'}>{projectItem.name}</td>
-                <td>{projectItem.description}</td>
-            </tr>
+            <Tr key={projectItem.name}>
+                <Td color={'blue.500'} fontWeight={'bold'}>{projectItem.name}</Td>
+                <Td>{projectItem.description}</Td>
+            </Tr>
         )
     }
+}
+
+export default function Projects() {
+    return (
+        <Box>
+            <Heading as={'h1'} textAlign={'center'} paddingBottom={'0.2em'} paddingTop={'1em'}>Projects</Heading>
+            <Text textAlign={'center'} paddingBottom={'1'}>(That I care to mention)</Text>
+            <Table className={'project-table-div'}>
+                <Thead>
+                    <Tr>
+                        <Th>Name</Th>
+                        <Th>Description</Th>
+                    </Tr>
+                </Thead>
+                <Tbody>
+                    {renderProjectListElements()}
+                </Tbody>
+            </Table>
+        </Box>
+    )
 }

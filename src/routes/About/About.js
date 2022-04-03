@@ -1,21 +1,22 @@
 import React from 'react';
-import './About.css';
+import {Box, Heading, Link, List, ListItem, Text} from "@chakra-ui/react";
 
 const About = () => (
-  <div className="About">
-      <h1>About Me</h1>
-      <p>I'm just like... a guy, my dude.</p>
+  <Box>
+      <Heading as={'h1'} textAlign={'center'} paddingBottom={'1em'} paddingTop={'1em'}>About Me</Heading>
+      <Text>I'm just like... a guy, my dude.</Text>
 
-      <ul>
-          <li>
-              <a href={'https://www.linkedin.com/in/alexanderlbates/'}> Fullstack Developer</a> (with projects on <a href={'https://gitlab.com/alloba'}>GitLab</a>)
-          </li>
-          <li><a href={'https://anilist.co/user/alloba/'}>Enjoyer of Trash Anime</a></li>
-          <li><a href={'https://open.spotify.com/user/alloba0'}>Garbage Music Connoisseur</a></li>
-      </ul>
+      <List paddingTop={'1em'} paddingBottom={'1em'}>
+          <ListItem>
+              <Link color={'blue.200'} href={'https://www.linkedin.com/in/alexanderlbates/'}>Fullstack Developer </Link>
+              (with projects on <Link color={'blue.200'} href={'https://gitlab.com/alloba'}>GitLab</Link>)
+          </ListItem>
+          <ListItem><Link color={'blue.200'} href={'https://anilist.co/user/alloba/'}>Enjoyer of Trash Anime</Link></ListItem>
+          <ListItem><Link color={'blue.200'} href={'https://open.spotify.com/user/alloba0'}>Garbage Music Connoisseur</Link></ListItem>
+      </List>
 
-      <p>All of these things are true.</p>
-  </div>
+      <Text>All of these things are true.</Text>
+  </Box>
 );
 
 export default About;

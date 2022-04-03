@@ -1,11 +1,18 @@
 import React from 'react';
-import './App.css';
 
-import {Routes, Route} from 'react-router-dom'
+import {
+    Box,
+    Menu,
+    MenuButton,
+    IconButton,
+    MenuList,
+    MenuItem
+} from "@chakra-ui/react";
+import {HamburgerIcon} from "@chakra-ui/icons"
+import {Routes, Route, Link as RouterLink} from 'react-router-dom'
 import NavigationComponent from "./data-structures/NavigationComponent";
-import MenuTop from "./components/MenuTop/MenuTop";
-import Home from "./routes/home/Home";
-import Projects from "./routes/projects/Projects";
+import Home from "./routes/Home/Home";
+import Projects from "./routes/Projects/Projects";
 import About from "./routes/About/About";
 import PointMapVisualization from "./routes/PointMapVisualization/PointMapVisualization";
 
@@ -21,12 +28,17 @@ import PointMapVisualization from "./routes/PointMapVisualization/PointMapVisual
  */
 function App() {
     return (
-        <div className="App">
-            <MenuTop menuObjects={menuItems}/>
-            <div className={'routes'}>
+        <Box>
+            <Box paddingLeft={'1em'} paddingTop={'1em'} position={'absolute'}>
+            <Menu>
+                <MenuButton as={IconButton} icon={<HamburgerIcon/>}/>
+                <MenuList>{menuRender}</MenuList>
+            </Menu>
+            </Box>
+            <Box maxW={'5xl'} m={'0 auto'}>
                 <Routes>{routes}</Routes>
-            </div>
-        </div>
+            </Box>
+        </Box>
     );
 }
 
@@ -38,7 +50,9 @@ const menuItems = [
 ]
 
 const routes = menuItems.map(item =>
-    <Route key={item.title} path={item.link} element={item.component}>{item.title}</Route>
-)
+    <Route key={item.title} path={item.link} element={item.component}/>)
+
+const menuRender = menuItems.map(item =>
+    <RouterLink to={item.link} key={item.title}><MenuItem>{item.title}</MenuItem></RouterLink>)
 
 export default App;
