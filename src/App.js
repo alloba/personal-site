@@ -30,29 +30,27 @@ function App() {
     return (
         <Box>
             <Box paddingLeft={'1em'} paddingTop={'1em'} position={'absolute'}>
-            <Menu>
-                <MenuButton as={IconButton} icon={<HamburgerIcon/>}/>
-                <MenuList>{menuRender}</MenuList>
-            </Menu>
+                <Menu>
+                    <MenuButton as={IconButton} icon={<HamburgerIcon/>}/>
+                    <MenuList>
+                        <RouterLink to={'/'}><MenuItem>Home</MenuItem></RouterLink>
+                        <RouterLink to={'/projects'}><MenuItem>Projects</MenuItem></RouterLink>
+                        <RouterLink to={'/about'}><MenuItem>About Me</MenuItem></RouterLink>
+                        <RouterLink to={'/canvas-test'}><MenuItem>Canvas Test</MenuItem></RouterLink>
+                    </MenuList>
+                </Menu>
             </Box>
+
             <Box maxW={'5xl'} m={'0 auto'}>
-                <Routes>{routes}</Routes>
+                <Routes>
+                    <Route path={'/'} element={<Home/>}/>
+                    <Route path={'/projects'} element={<Projects/>}/>
+                    <Route path={'/about'} element={<About/>}/>
+                    <Route path={'/canvas-test'} element={<PointMapVisualization/>}/>
+                </Routes>
             </Box>
         </Box>
     );
 }
-
-const menuItems = [
-    new NavigationComponent('Home', 'Home page for website', '/', <Home/>),
-    new NavigationComponent('Projects', 'Projects page', '/projects', <Projects/>),
-    new NavigationComponent('About', 'About me.', '/about', <About/>),
-    new NavigationComponent('CanvasTest', 'Testing Canvas Api for Visuals.', '/canvas-test', <PointMapVisualization/>)
-]
-
-const routes = menuItems.map(item =>
-    <Route key={item.title} path={item.link} element={item.component}/>)
-
-const menuRender = menuItems.map(item =>
-    <RouterLink to={item.link} key={item.title}><MenuItem>{item.title}</MenuItem></RouterLink>)
 
 export default App;
