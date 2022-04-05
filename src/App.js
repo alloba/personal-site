@@ -10,7 +10,6 @@ import {
 } from "@chakra-ui/react";
 import {HamburgerIcon} from "@chakra-ui/icons"
 import {Routes, Route, Link as RouterLink} from 'react-router-dom'
-import NavigationComponent from "./data-structures/NavigationComponent";
 import Home from "./routes/Home/Home";
 import Projects from "./routes/Projects/Projects";
 import About from "./routes/About/About";
