@@ -58,12 +58,3 @@ resource "aws_cloudfront_distribution" "website-routing" {
     ssl_support_method = "sni-only" # DO NOT USE VIP. expensivo.
   }
 }
-
-resource "aws_cloudfront_function" "page-redirect" {
-  code    = file("${path.module}/cf-functions/personal-site-uri-redirect.js")
-  name    = "personal-site-redirect"
-  runtime = "cloudfront-js-1.0"
-  publish = true
-}
-
-
