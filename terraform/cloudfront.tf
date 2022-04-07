@@ -19,6 +19,12 @@ resource "aws_cloudfront_distribution" "website-routing" {
     }
   }
 
+  custom_error_response {
+    error_code = 404
+    error_caching_min_ttl = 30
+    response_page_path = "/index.html"
+  }
+
   # Default routing logic. When no other defined behaviors match, this one is used.
   default_cache_behavior {
     allowed_methods        = ["DELETE", "GET", "HEAD", "OPTIONS", "PATCH", "POST", "PUT"]
@@ -36,11 +42,6 @@ resource "aws_cloudfront_distribution" "website-routing" {
       cookies {
         forward = "all"
       }
-    }
-
-    function_association {
-      event_type   = "viewer-request"
-      function_arn = aws_cloudfront_function.page-redirect.arn
     }
   }
 
