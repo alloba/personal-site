@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter} from "react-router-dom";
+import {HashRouter} from "react-router-dom";
 import {ChakraProvider, ColorModeScript} from "@chakra-ui/react";
 import theme from "./theme";
 
@@ -10,7 +10,7 @@ ReactDOM.render(
     <>
     <ColorModeScript initialColorMode={theme.config.initialColorMode} />
     <ChakraProvider theme={theme}>
-        <BrowserRouter><App /></BrowserRouter>
+        <HashRouter><App /></HashRouter>
     </ChakraProvider>
     </>,
   document.getElementById('root')
