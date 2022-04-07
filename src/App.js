@@ -1,15 +1,7 @@
 import React from 'react';
 
-import {
-    Box,
-    Menu,
-    MenuButton,
-    IconButton,
-    MenuList,
-    MenuItem
-} from "@chakra-ui/react";
-import {HamburgerIcon} from "@chakra-ui/icons"
-import {Routes, Route, Link as RouterLink} from 'react-router-dom'
+import {Box, Grid, GridItem, List, ListItem} from "@chakra-ui/react";
+import {Link as RouterLink, Route, Routes} from 'react-router-dom'
 import Home from "./routes/Home/Home";
 import Projects from "./routes/Projects/Projects";
 import About from "./routes/About/About";
@@ -27,28 +19,33 @@ import PointMapVisualization from "./routes/PointMapVisualization/PointMapVisual
  */
 function App() {
     return (
-        <Box>
-            <Box paddingLeft={'1em'} paddingTop={'1em'} position={'absolute'}>
-                <Menu>
-                    <MenuButton as={IconButton} icon={<HamburgerIcon/>}/>
-                    <MenuList>
-                        <RouterLink to={'/'}><MenuItem>Home</MenuItem></RouterLink>
-                        <RouterLink to={'/projects'}><MenuItem>Projects</MenuItem></RouterLink>
-                        <RouterLink to={'/about'}><MenuItem>About Me</MenuItem></RouterLink>
-                        <RouterLink to={'/canvas-test'}><MenuItem>Canvas Test</MenuItem></RouterLink>
-                    </MenuList>
-                </Menu>
-            </Box>
+        <Grid templateColumns={'repeat(6, 1fr)'}>
 
-            <Box maxW={'5xl'} m={'0 auto'}>
-                <Routes>
-                    <Route path={'/'} element={<Home/>}/>
-                    <Route path={'/projects'} element={<Projects/>}/>
-                    <Route path={'/about'} element={<About/>}/>
-                    <Route path={'/canvas-test'} element={<PointMapVisualization/>}/>
-                </Routes>
-            </Box>
-        </Box>
+            <GridItem colSpan={1}>
+                <Box paddingLeft={'1em'} paddingTop={'8em'} width={'10em'}>
+                    <List>
+                        <RouterLink to={'/'}> <ListItem>Home </ListItem> </RouterLink>
+                        <RouterLink to={'/projects'}> <ListItem>Projects </ListItem> </RouterLink>
+                        <RouterLink to={'/about'}> <ListItem>About Me </ListItem> </RouterLink>
+                        <RouterLink to={'/canvas-test'}> <ListItem>Canvas Test </ListItem> </RouterLink>
+                    </List>
+                </Box>
+            </GridItem>
+
+            <GridItem colSpan={4}>
+                <Box>
+                    <Routes>
+                        <Route path={'/'} element={<Home/>}/>
+                        <Route path={'/projects'} element={<Projects/>}/>
+                        <Route path={'/about'} element={<About/>}/>
+                        <Route path={'/canvas-test'} element={<PointMapVisualization/>}/>
+                    </Routes>
+                </Box>
+            </GridItem>
+
+            <GridItem colSpan={1}><Box/></GridItem>
+
+        </Grid>
     );
 }
 
