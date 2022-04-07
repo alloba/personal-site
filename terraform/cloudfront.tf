@@ -1,7 +1,7 @@
 resource "aws_cloudfront_distribution" "website-routing" {
   comment = "Personal website distribution"
   enabled = true # an alias directly relates to any alternate CNAME records that should be used.
-  aliases = ["alexlbates.com"]
+  aliases = ["alexlbates.com", "www.alexlbates.com"]
   default_root_object = "index.html"
 
   price_class = "PriceClass_100"
@@ -19,6 +19,8 @@ resource "aws_cloudfront_distribution" "website-routing" {
     }
   }
 
+  # This isn't like... the perfect way to handle this.
+  # But all the other ways i've tried to do it really just aren't worth the effort.
   custom_error_response {
     error_code = 404
     error_caching_min_ttl = 30
