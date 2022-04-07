@@ -6,6 +6,7 @@ import Home from "./routes/Home/Home";
 import Projects from "./routes/Projects/Projects";
 import About from "./routes/About/About";
 import PointMapVisualization from "./routes/PointMapVisualization/PointMapVisualization";
+import NotFound from "./routes/NotFound/NotFound";
 
 /**
  * Entrypoint into the React site.
@@ -35,10 +36,11 @@ function App() {
             <GridItem colSpan={4}>
                 <Box>
                     <Routes>
-                        <Route path={'/'} element={<Home/>}/>
+                        <Route path={'/'} exact={true} element={<Home/>}/>
                         <Route path={'/projects'} element={<Projects/>}/>
                         <Route path={'/about'} element={<About/>}/>
                         <Route path={'/canvas-test'} element={<PointMapVisualization/>}/>
+                        <Route path={'*'} element={<NotFound/>}/>
                     </Routes>
                 </Box>
             </GridItem>
