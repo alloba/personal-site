@@ -23,6 +23,7 @@ resource "aws_cloudfront_distribution" "website-routing" {
     error_code = 404
     error_caching_min_ttl = 30
     response_page_path = "/index.html"
+    response_code = 302
   }
 
   # Default routing logic. When no other defined behaviors match, this one is used.
