@@ -1,12 +1,12 @@
 resource "aws_route53_record" "primary-website-record" {
-  name    = "" # bare record will control base zone url
-  type    = "A"
-  zone_id = data.aws_route53_zone.primary-domain.id
+  name            = ""
+  zone_id         = data.aws_route53_zone.primary-domain.id
+  type            = "A"
 
   alias {
-    name                   = aws_s3_bucket.website-bucket.website_domain
-    zone_id                = aws_s3_bucket.website-bucket.hosted_zone_id
-    evaluate_target_health = true
+    evaluate_target_health = false
+    name                   = aws_cloudfront_distribution.website-routing.domain_name
+    zone_id                = aws_cloudfront_distribution.website-routing.hosted_zone_id
   }
 }
 
