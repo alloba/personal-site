@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Box, Divider, Grid, GridItem, List, ListItem} from "@chakra-ui/react";
+import {Box, List, ListItem, Stack} from "@chakra-ui/react";
 import {Link as RouterLink, Route, Routes} from 'react-router-dom';
 import Home from "./routes/Home/Home";
 import Projects from "./routes/Projects/Projects";
@@ -20,31 +20,24 @@ import NotFound from "./routes/NotFound/NotFound";
  */
 function App() {
     return (
-        <Grid templateColumns={'repeat(8, 1fr)'}>
-            <GridItem colSpan={1}>
-                <Box paddingLeft={'1em'} paddingTop={'2em'} width={'8em'}>
-                    <List>
-                        <RouterLink to={'/'}>               <ListItem>Home</ListItem></RouterLink>
-                        <RouterLink to={'/about'}>          <ListItem>About</ListItem></RouterLink>
-                        <RouterLink to={'/projects'}>       <ListItem>Projects</ListItem></RouterLink>
-                        <RouterLink to={'/canvas-test'}>    <ListItem>Canvas Test</ListItem></RouterLink>
-                    </List>
-                    <Divider orientation='horizontal' paddingBottom={'1em'} />
-                </Box>
-            </GridItem>
+        <Stack direction={['column', 'row']} padding={'20px'}>
+            <List width={'9em'}>
+                <RouterLink to={'/'}> <ListItem>Home</ListItem></RouterLink>
+                <RouterLink to={'/about'}> <ListItem>About</ListItem></RouterLink>
+                <RouterLink to={'/projects'}> <ListItem>Projects</ListItem></RouterLink>
+                <RouterLink to={'/canvas-test'}> <ListItem>Canvas Test</ListItem></RouterLink>
+            </List>
+            <Box>
+                <Routes>
+                    <Route path={'/'} element={<Home/>} exact={true}/>
+                    <Route path={'/about/*'} element={<About/>}/>
+                    <Route path={'/projects/*'} element={<Projects/>}/>
+                    <Route path={'/canvas-test/*'} element={<PointMapVisualization/>}/>
+                    <Route path={'*'} element={<NotFound/>}/>
+                </Routes>
+            </Box>
+        </Stack>
 
-            <GridItem colSpan={7}>
-                <Box>
-                    <Routes>
-                        <Route path={'/'}                   element={<Home/>} exact={true} />
-                        <Route path={'/about/*'}            element={<About/>}/>
-                        <Route path={'/projects/*'}         element={<Projects/>}/>
-                        <Route path={'/canvas-test/*'}      element={<PointMapVisualization/>}/>
-                        <Route path={'*'}                   element={<NotFound/>}/>
-                    </Routes>
-                </Box>
-            </GridItem>
-        </Grid>
     );
 }
 

@@ -1,17 +1,11 @@
 import React from "react";
-import {Box, Flex} from "@chakra-ui/react";
+import {Box, Stack} from "@chakra-ui/react";
 
 const PageWrapper = (props) => (
-    <Flex>
-        <Box paddingTop={'2em'}
-             paddingRight={'4em'}
-             minWidth={'3em'}
-             maxWidth={'14em'}
-             fontWeight={'bold'}>
-            {props.subMenu}
-        </Box>
+    <Stack direction={['column', 'row']} gap={'2em'}>
+        <Box fontWeight={'bold'} maxWidth={'10em'} minWidth={'10em'}>{props.subMenu}</Box>
         <Box>{props.children}</Box>
-    </Flex>
+    </Stack>
 )
 
 export default PageWrapper
