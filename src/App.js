@@ -5,7 +5,6 @@ import {Link as RouterLink, Route, Routes} from 'react-router-dom';
 import Home from "./routes/Home/Home";
 import Projects from "./routes/Projects/Projects";
 import About from "./routes/About/About";
-import PointMapVisualization from "./components/PointMapVisualization/PointMapVisualization";
 import NotFound from "./routes/NotFound/NotFound";
 
 /**
