@@ -5,7 +5,7 @@ import {MinusIcon} from "@chakra-ui/icons";
 function AboutSite() {
     return (
         <Box>
-            <Heading as={'h1'} textAlign={'left'} paddingBottom={'1em'} paddingTop={'1em'}>About this Site</Heading>
+            <Heading as={'h1'} textAlign={'center'} paddingBottom={'1em'} paddingTop={'1em'}>About this Site</Heading>
 
             <Heading as={'h2'} fontSize={'1.5em'} paddingBottom={'0.5em'}>Purpose</Heading>
             <Text>
