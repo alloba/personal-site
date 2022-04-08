@@ -1,12 +1,8 @@
-import { extendTheme } from "@chakra-ui/react";
+import {extendTheme} from "@chakra-ui/react";
 
-export default extendTheme({
+
+const theme = {
     styles: {
-        config: {
-            initialColorMode: 'dark',
-            useSystemColorMode: false
-        },
-
         global: {
             h2: {
                 paddingTop: '1rem',
@@ -17,5 +13,11 @@ export default extendTheme({
                 paddingBottom: '1rem'
             }
         }
+    },
+    config: {
+        initialColorMode: 'dark',
+        useSystemColorMode: false
     }
-});
+}
+
+export default extendTheme(theme);
