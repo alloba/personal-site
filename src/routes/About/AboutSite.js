@@ -1,12 +1,12 @@
 import React from "react";
 import {Box, Text} from "@chakra-ui/react";
 
-function AboutHardware() {
+function AboutSite() {
     return (
         <Box>
-            <Text>Hardware</Text>
+            <Text>Site</Text>
         </Box>
     )
 }
 
-export default AboutHardware
+export default AboutSite

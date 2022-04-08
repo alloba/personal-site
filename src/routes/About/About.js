@@ -1,40 +1,31 @@
-import React, {useEffect} from 'react';
-import {Box, ListItem, Stack, StackDivider} from "@chakra-ui/react";
+import React from 'react';
+import {Box, List, ListItem} from "@chakra-ui/react";
 import {Link as RouterLink, Route, Routes} from 'react-router-dom'
 import AboutMe from "./AboutMe";
-import AboutHardware from "./AboutHardware";
-import SubMenu from "../../components/SubMenu";
+import AboutSite from "./AboutSite";
+import PageWrapper from "../../components/PageWrapper";
+import NotFound from "../NotFound/NotFound";
 
-// TODO: Honestly using hooks is not currently feeling good.
-//       Specifically the way I lose context when providing a sub-menu (since it's from the parent element ultimately)
-//       Also the way you feed stuff into the main route elements is kind of trash feeling. will have to reevaluate.
-function About({changeSubMenu, currentLocation}) {
+function About() {
 
-    useEffect(() => {
-            changeSubMenu(subMenu())
-            return function cleanup() { changeSubMenu(<SubMenu/>) }
-        },
-        [changeSubMenu, currentLocation]
-    )
-
-    const subMenu = () => (
-        <SubMenu>
-            <RouterLink to={'/about/me'}> <ListItem>Me</ListItem></RouterLink>
-            <RouterLink to={'/about/hardware'}> <ListItem>Hardware</ListItem></RouterLink>
-        </SubMenu>
+    const menu = (
+        <List>
+            <RouterLink to={'about-me'}><ListItem>About Me</ListItem></RouterLink>
+            <RouterLink to={'about-site'}><ListItem>About this Site</ListItem></RouterLink>
+        </List>
     )
 
     return (
-        <Box>
-            <Stack direction={'column'} divider={<StackDivider/>}>
-            </Stack>
-
-            <Routes>
-                <Route path={'/'} en element={<AboutMe/>}/>
-                <Route path={'me'} en element={<AboutMe/>}/>
-                <Route path={'hardware'} element={<AboutHardware/>}/>
-            </Routes>
-        </Box>
+        <PageWrapper subMenu={menu}>
+            <Box>
+                <Routes>
+                    <Route path={'/'} exact={true} element={<AboutMe/>}/>
+                    <Route path={'about-me'} exact={true} element={<AboutMe/>}/>
+                    <Route path={'about-site'} exact={true} element={<AboutSite/>}/>
+                    <Route path={'*'} element={<NotFound/>}/>
+                </Routes>
+            </Box>
+        </PageWrapper>
     )
 }
 
