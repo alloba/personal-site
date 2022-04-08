@@ -6,7 +6,7 @@ import NotFound from "../NotFound/NotFound";
 import ProjectKaleidoscope from "./ProjectKaleidoscope";
 import ProjectDeveloperSetup from "./ProjectDeveloperSetup";
 import {ProjectWsgScraper} from "./ProjectWsgScraper";
-import {ProjectDocumenationSite} from "./ProjectDocumenationSite";
+import {ProjectDocumentationSite} from "./ProjectDocumentationSite";
 
 export default function Projects() {
 
@@ -26,7 +26,7 @@ export default function Projects() {
                 <Route path={'kaleidoscope'} exact={true} element={<ProjectKaleidoscope/>}/>
                 <Route path={'developer-setup'} exact={true} element={<ProjectDeveloperSetup/>}/>
                 <Route path={'wsg-scraper'} exact={true} element={<ProjectWsgScraper/>}/>
-                <Route path={'documentation-site'} exact={true} element={<ProjectDocumenationSite/>}/>
+                <Route path={'documentation-site'} exact={true} element={<ProjectDocumentationSite/>}/>
                 <Route path={'*'} element={<NotFound/>}/>
             </Routes>
         </PageWrapper>
