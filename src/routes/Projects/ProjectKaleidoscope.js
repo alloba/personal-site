@@ -13,7 +13,7 @@ const ProjectKaleidoscope = () => (
             It's nice to just set it going on a monitor and have it as background noise.
         </Text>
 
-        <Text><Link href={'//kaleidoscope.alexlbates.com'} color={'blue.200'}>Project Link</Link></Text>
+        <Text><Link href={'http://kaleidoscope.alexlbates.com'} color={'blue.200'}>Project Link</Link></Text>
         <Text><Link href={'https://gitlab.com/alloba/kaleidoscope-combined'} color={'blue.200'}>Source Code</Link></Text>
 
         <Center>
