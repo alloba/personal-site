@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Box, List, ListItem, Stack} from "@chakra-ui/react";
+import {Box, HStack, Text, VStack} from "@chakra-ui/react";
 import {Link as RouterLink, Route, Routes} from 'react-router-dom';
 import Home from "./routes/Home/Home";
 import Projects from "./routes/Projects/Projects";
@@ -20,14 +20,14 @@ import NotFound from "./routes/NotFound/NotFound";
  */
 function App() {
     return (
-        <Stack direction={['column', 'row']} padding={'20px'}>
-            <List width={'9em'}>
-                <RouterLink to={'/'}> <ListItem>Home</ListItem></RouterLink>
-                <RouterLink to={'/about'}> <ListItem>About</ListItem></RouterLink>
-                <RouterLink to={'/projects'}> <ListItem>Projects</ListItem></RouterLink>
-                <RouterLink to={'/canvas-test'}> <ListItem>Canvas Test</ListItem></RouterLink>
-            </List>
-            <Box>
+        <VStack padding={'1rem'} >
+            <HStack gap={'0.3rem'} padding={'1rem'}>
+                <RouterLink to={'/'}>               <Text fontSize={'1.2rem'} fontWeight={'semibold'}>Home</Text></RouterLink>
+                <RouterLink to={'/about'}>          <Text fontSize={'1.2rem'} fontWeight={'semibold'}>About</Text></RouterLink>
+                <RouterLink to={'/projects'}>       <Text fontSize={'1.2rem'} fontWeight={'semibold'}>Projects</Text></RouterLink>
+                <RouterLink to={'/canvas-test'}>    <Text fontSize={'1.2rem'} fontWeight={'semibold'}>Canvas Test</Text></RouterLink>
+            </HStack>
+            <Box maxWidth={'1000px'}>
                 <Routes>
                     <Route path={'/'} element={<Home/>} exact={true}/>
                     <Route path={'/about/*'} element={<About/>}/>
@@ -36,7 +36,7 @@ function App() {
                     <Route path={'*'} element={<NotFound/>}/>
                 </Routes>
             </Box>
-        </Stack>
+        </VStack>
 
     );
 }

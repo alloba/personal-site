@@ -1,11 +1,11 @@
 import React from "react";
-import {Box, Stack} from "@chakra-ui/react";
+import {Box, HStack, VStack} from "@chakra-ui/react";
 
 const PageWrapper = (props) => (
-    <Stack direction={['column', 'row']} gap={'2em'}>
-        <Box fontWeight={'bold'} maxWidth={'10em'} minWidth={'10em'}>{props.subMenu}</Box>
-        <Box>{props.children}</Box>
-    </Stack>
+    <VStack>
+        <HStack justifyContent={'center'} gap={'0.3rem'} paddingLeft={'1rem'} paddingRight={'1rem'}>{props.subMenu}</HStack>
+        <Box width={'100%'} >{props.children}</Box>
+    </VStack>
 )
 
 export default PageWrapper

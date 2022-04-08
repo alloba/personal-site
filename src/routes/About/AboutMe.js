@@ -4,7 +4,7 @@ import {Box, Heading, Link, List, ListItem, Text} from "@chakra-ui/react";
 function AboutMe () {
     return (
         <Box>
-            <Heading as={'h2'} textAlign={'left'} paddingBottom={'1em'} paddingTop={'1em'}>About Me</Heading>
+            <Heading as={'h2'} textAlign={'center'} paddingBottom={'1em'} paddingTop={'1em'}>About Me</Heading>
             <Text>I'm just like... a guy, my dude.</Text>
 
             <List paddingTop={'1em'} paddingBottom={'1em'}>

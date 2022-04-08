@@ -9,9 +9,8 @@ export default function Projects() {
                 {/*TODO: It would be nice to integrate this page with the site's router, and then have subpages */}
                 {/*      for all these things. It would give a dedicated space to add more information about each */}
                 {/*      project. or category of project (CLI customizations could really all fit together).*/}
-                <Heading as={'h1'} paddingBottom={'0.2em'} paddingTop={'1em'}>Projects and
-                    Ideas</Heading>
-                <Text paddingBottom={'3em'}>(That I care to mention)</Text>
+                <Heading as={'h1'} textAlign={'center'} paddingBottom={'0.2em'} paddingTop={'1em'}>Projects and Ideas</Heading>
+                <Text  textAlign={'center'} paddingBottom={'3em'}>(That I care to mention)</Text>
 
                 <Link href={'./projects'} fontWeight={'bold'} >Personal Site</Link>
                 <Text paddingBottom={'1em'}>This website! I slightly intend for this site to be a jumping off point for anything else that has an online presence. It's still shaping up though.</Text>
