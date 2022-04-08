@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, List, Text} from "@chakra-ui/react";
+import {Text} from "@chakra-ui/react";
 import {Link as RouterLink, Route, Routes} from 'react-router-dom'
 import AboutMe from "./AboutMe";
 import AboutSite from "./AboutSite";
