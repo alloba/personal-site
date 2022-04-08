@@ -5,7 +5,7 @@ import {Link as RouterLink, Route, Routes} from 'react-router-dom';
 import Home from "./routes/Home/Home";
 import Projects from "./routes/Projects/Projects";
 import About from "./routes/About/About";
-import PointMapVisualization from "./routes/PointMapVisualization/PointMapVisualization";
+import PointMapVisualization from "./components/PointMapVisualization/PointMapVisualization";
 import NotFound from "./routes/NotFound/NotFound";
 
 /**
@@ -25,14 +25,12 @@ function App() {
                 <RouterLink to={'/'}>               <Text fontSize={'1.2rem'} fontWeight={'semibold'}>Home</Text></RouterLink>
                 <RouterLink to={'/about'}>          <Text fontSize={'1.2rem'} fontWeight={'semibold'}>About</Text></RouterLink>
                 <RouterLink to={'/projects'}>       <Text fontSize={'1.2rem'} fontWeight={'semibold'}>Projects</Text></RouterLink>
-                <RouterLink to={'/canvas-test'}>    <Text fontSize={'1.2rem'} fontWeight={'semibold'}>Canvas Test</Text></RouterLink>
             </HStack>
             <Box maxWidth={'1000px'}>
                 <Routes>
                     <Route path={'/'} element={<Home/>} exact={true}/>
                     <Route path={'/about/*'} element={<About/>}/>
                     <Route path={'/projects/*'} element={<Projects/>}/>
-                    <Route path={'/canvas-test/*'} element={<PointMapVisualization/>}/>
                     <Route path={'*'} element={<NotFound/>}/>
                 </Routes>
             </Box>
