@@ -3,11 +3,11 @@ import { extendTheme } from "@chakra-ui/react";
 export default extendTheme({
     styles: {
         config: {
-            initialColorMode: 'dark'
+            initialColorMode: 'light',
+            useSystemColorMode: false
         },
+
         global: {
-            body: {
-            },
             h2: {
                 paddingTop: '1rem',
                 paddingBottom: '2rem',

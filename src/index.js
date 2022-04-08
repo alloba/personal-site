@@ -8,7 +8,7 @@ import customTheme from "./customTheme";
 
 ReactDOM.render(
     <>
-    <ColorModeScript initialColorMode={customTheme.config.initialColorMode} />
+    <ColorModeScript initialColorMode={customTheme.config.initialColorMode}/>
     <ChakraProvider theme={customTheme}>
         <HashRouter><App /></HashRouter>
     </ChakraProvider>
