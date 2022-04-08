@@ -3,7 +3,7 @@ import { extendTheme } from "@chakra-ui/react";
 export default extendTheme({
     styles: {
         config: {
-            initialColorMode: 'light',
+            initialColorMode: 'dark',
             useSystemColorMode: false
         },
 
