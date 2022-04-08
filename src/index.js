@@ -4,12 +4,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {HashRouter} from "react-router-dom";
 import {ChakraProvider, ColorModeScript} from "@chakra-ui/react";
-import theme from "./theme";
+import customTheme from "./customTheme";
 
 ReactDOM.render(
     <>
-    <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-    <ChakraProvider theme={theme}>
+    <ColorModeScript initialColorMode={customTheme.config.initialColorMode} />
+    <ChakraProvider theme={customTheme}>
         <HashRouter><App /></HashRouter>
     </ChakraProvider>
     </>,
