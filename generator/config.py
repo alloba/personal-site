@@ -5,6 +5,7 @@ import markdown
 from markdown_preprocessors import HyperlinkExtension
 
 
+# TODO: This should really be a separate file that gets loaded
 class GeneratorConfig:
     def __init__(self, root_dir):
         self.ROOT_PATH =                os.path.abspath(root_dir) + '/'
