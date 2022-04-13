@@ -3,6 +3,7 @@ import shutil
 
 from util_functions import tree_walk
 
+
 class Generator:
     def __init__(self, config_object):
         self.CONFIG = config_object
@@ -77,4 +78,3 @@ class Generator:
         for key, value in menu_config.items():
             elems.append(f'<a href="{value}">{key}</a>')
         return '\n'.join(elems)
-

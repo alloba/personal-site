@@ -7,6 +7,7 @@ from markdown_preprocessors import HyperlinkExtension
 
 class GeneratorConfig:
     def __init__(self, root_dir):
+        self.ROOT_PATH =                os.path.abspath(root_dir) + '/'
         self.BUILD_SUBDIR =             os.path.abspath(f'{root_dir}/build/') + '/'
         self.BUILD_FRAGMENTS_SUBDIR =   os.path.abspath(f'{root_dir}/build/fragments/') + '/'
         self.FRAGMENT_SEPARATOR =       'fragments/'

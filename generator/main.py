@@ -26,7 +26,9 @@ if __name__ == '__main__':
 
     # Move all remaining resource files into build folder
     for file in misc_paths:
-        shutil.copy2(file, CONFIG.BUILD_SITE_SUBDIR)
+        path = os.path.abspath(CONFIG.BUILD_SITE_SUBDIR + '/' + file.removeprefix(CONFIG.PAGES_SUBDIR))
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        shutil.copy2(file, path)
 
     # Copy all template resources into build folder.
     # You end up with templates in the final product, but w/e. This makes it easy to shift all the css over.
