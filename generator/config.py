@@ -18,7 +18,7 @@ class GeneratorConfig:
         self.PAGES_SUBDIR =             os.path.abspath(f'{root_dir}/pages/') + '/'
         self.MD_PROCESSOR =             markdown.Markdown(extensions=['sane_lists', HyperlinkExtension()])
         self.MENU_CONFIG = {
-            'Home': '/index.html',
+            'Home': '/',
             'About Me': '/about.html',
             'Projects': '/projects/projects.html',
             'Kaleidoscope': 'http://kaleidoscope.alexlbates.com'
