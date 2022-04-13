@@ -27,7 +27,7 @@ Site Build:
   stage: build
   only:
     - main
-  image: python:3.7-buster
+  image: python:3.9
   script:
     - cd generator
     - pip install -r requirements.txt
