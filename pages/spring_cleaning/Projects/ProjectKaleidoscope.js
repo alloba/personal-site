@@ -17,7 +17,7 @@ const ProjectKaleidoscope = () => (
         <Text><Link href={'https://gitlab.com/alloba/kaleidoscope-combined'} color={'blue.200'}>Source Code</Link></Text>
 
         <Center>
-            <Image src={'images/kaleidoscope/sampler.png'} maxWidth={'80%'}/>
+            <Image src={'images/kaleidoscope/kaleidoscope_sampler.png'} maxWidth={'80%'}/>
         </Center>
     </Box>
 )
