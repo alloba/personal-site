@@ -9,5 +9,5 @@ This site has the special distinction of being a slightly large chain of integra
 that I control.
 
 - Custom (and very basic) static site generator
-- Hand-styled pages. As can tell. 
-- Hosted in AWS off of infrastructure that I wrote in Terraform.
+- Hand-styled pages. As you can tell. 
+- Hosted in AWS off of infrastructure written for Terraform.
