@@ -1,8 +1,8 @@
 import React from 'react';
 import {Text} from "@chakra-ui/react";
-import PageWrapper from "../../components/PageWrapper";
+import PageWrapper from "../../../src_old/components/PageWrapper";
 import {Link as RouterLink, Route, Routes} from "react-router-dom";
-import NotFound from "../NotFound/NotFound";
+import NotFound from "../../../src_old/routes/NotFound/NotFound";
 import ProjectKaleidoscope from "./ProjectKaleidoscope";
 import ProjectDeveloperSetup from "./ProjectDeveloperSetup";
 import {ProjectWsgScraper} from "./ProjectWsgScraper";

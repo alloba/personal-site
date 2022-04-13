@@ -23,20 +23,16 @@ Terraform Apply:
     - terraform apply --auto-approve
   dependencies: [ ]
 
-React Build:
+Site Build:
   stage: build
   only:
     - main
-  image: node:17
-  cache:
-    key:
-      files:
-        - package-lock.json
-    paths:
-      - .npm/
+  image: python:3.7-buster
   script:
-    - npm ci --cache .npm --prefer-offline
-    - npm run build
+    - cd generator
+    - pip install requirements.txt
+    - python3 main.py
+    - cd ../
   artifacts:
     paths:
       - 'build/'
@@ -55,6 +51,6 @@ Deploy Site:
     AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
     AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
   script:
-    - aws s3 sync build s3://alexlbates.com --delete
+    - aws s3 sync build/site s3://alexlbates.com --delete
   dependencies:
-    - React Build
+    - Site Build

@@ -1,8 +1,3 @@
-import React from "react";
-import {Box, Heading, Link, List, ListItem, Text} from "@chakra-ui/react";
-
-function AboutMe () {
-    return (
         <Box>
             <Heading>About Me</Heading>
             <Text>I'm just like... a guy, my dude.</Text>
@@ -18,7 +13,11 @@ function AboutMe () {
 
             <Text>All of these things are true.</Text>
         </Box>
-    )
-}
+# About Me
 
-export default AboutMe
+I'm just like... a guy, my dude. 
+
+- [Software Developer](https://www.linkedin.com/in/alexanderlbates/) 
+  with a short attention span. With projects on [GitLab](https://gitlab.com/alloba).
+- Enjoyer of [Trash Anime](https://anilist.co/user/alloba/)
+- [Garbage Music](https://open.spotify.com/user/alloba0) Connoisseur
