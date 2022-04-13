@@ -3,6 +3,7 @@
 
 # site build
 /build
+/generator/__pycache__/
 
 # terraform
 terraform/.terraform
