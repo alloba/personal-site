@@ -21,5 +21,6 @@ class GeneratorConfig:
             'Home': '/',
             'About Me': '/about.html',
             'Projects': '/projects/projects.html',
+            'Daily Notes': '/daily-notes/index.html',
             'Kaleidoscope': 'http://kaleidoscope.alexlbates.com'
         }
