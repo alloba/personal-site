@@ -16,7 +16,7 @@ class GeneratorConfig:
         self.TEMPLATES_SUBDIR =         os.path.abspath(f'{root_dir}/templates/default/') + '/'
         self.DEFAULT_TEMPLATE =         os.path.abspath(f'{root_dir}/templates/default/default_template.html')
         self.PAGES_SUBDIR =             os.path.abspath(f'{root_dir}/pages/') + '/'
-        self.MD_PROCESSOR =             markdown.Markdown(extensions=['sane_lists', HyperlinkExtension()])
+        self.MD_PROCESSOR =             markdown.Markdown(extensions=['sane_lists', 'fenced_code', 'tables', HyperlinkExtension()])
         self.MENU_CONFIG = {
             'Home': '/',
             'About Me': '/about.html',
