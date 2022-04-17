@@ -20,7 +20,8 @@ class GeneratorConfig:
         self.MENU_CONFIG = {
             'Home': '/',
             'About Me': '/about.html',
-            'Projects': '/projects/projects.html',
+            'Projects': '/projects/index.html',
+            'Reference': '/reference/index.html',
             'Daily Notes': '/daily-notes/index.html',
             'Kaleidoscope': 'http://kaleidoscope.alexlbates.com'
         }
