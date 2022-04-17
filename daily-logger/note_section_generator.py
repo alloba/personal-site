@@ -166,9 +166,9 @@ def sysops(root_dir, today_dir, subpage):
     else:
         os.system(f'nvim {today_dir}/index.md')
 
-    # os.system(f'git -C {root_dir} add       {today_dir}* {root_dir}/pages/daily-notes/index.md')
-    # os.system(f'git -C {root_dir} commit    {today_dir}* {root_dir}/pages/daily-notes/index.md -m "notes - {today_date_string}"')
-    # os.system(f'git -C {root_dir} push')
+    os.system(f'git -C {root_dir} add       {today_dir}* {root_dir}/pages/daily-notes/index.md')
+    os.system(f'git -C {root_dir} commit    {today_dir}* {root_dir}/pages/daily-notes/index.md -m "notes - {today_date_string}"')
+    os.system(f'git -C {root_dir} push')
 
 
 
