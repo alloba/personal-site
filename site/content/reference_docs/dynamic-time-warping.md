@@ -1,7 +1,7 @@
 # Dynamic Time Warping 
 
 This is relating back to my 
-[Doppelganger Hydrolyzer](../projects/project-ideas/doppelganger-hydrolyzer.md) 
+[Doppelganger Hydrolyzer](projects/personal-landing-site/site/content/projects/project-ideas/doppelganger-hydrolyzer.md) 
 project.
 
 ## Summary

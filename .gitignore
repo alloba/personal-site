@@ -4,6 +4,8 @@
 # site build
 /build
 /generator/__pycache__/
+/site/.hugo_build.lock
+/site/public
 
 # terraform
 terraform/.terraform

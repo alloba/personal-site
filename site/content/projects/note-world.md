@@ -1,5 +1,8 @@
-# Note World (Provisional Title)
++++
+title = "Note World (Provisional Title)"
++++
 
+Not at all implemented in any way.
 Yet another interpretation on note-taking to insert into my life :smile: .
 
 ## Background

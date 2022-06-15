@@ -1,4 +1,6 @@
-# Kaleidoscope
++++
+title = "Kaleidoscope"
++++
 
 A website meant to endlessly play little video clips in a random order.
 
@@ -11,4 +13,5 @@ It's nice to just set it going on a monitor and have it as background noise.
 - [Site Link](http://kaleidoscope.alexlbates.com)
 - [Source Code](https://gitlab.com/alloba/kaleidoscope-combined)
 
-<img src="./kaleidoscope_sampler.png">
+
+![image](../kaleidoscope_sampler.png)
