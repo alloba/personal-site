@@ -1,5 +1,6 @@
 +++ 
 title = "Doppelganger Hydrolyzer"
+date = "2022-06-15T12:00:00-06:00"
 +++
 
 This project has the goal of running analytics on video clips, to find similarities. 
