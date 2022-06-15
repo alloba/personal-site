@@ -1,6 +1,6 @@
 +++
 title = "Note World (Provisional Title)"
-date = "2022-06-15T12:00:00-06:00"
+date = "2022-06-15"
 +++
 
 Not at all implemented in any way.

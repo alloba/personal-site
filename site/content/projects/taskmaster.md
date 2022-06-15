@@ -1,6 +1,6 @@
 +++
 title = "Task Master"
-date = "2022-06-15T12:00:00-06:00"
+date = "2022-06-15"
 +++
 
 Single page application for tracking recurring tasks. 

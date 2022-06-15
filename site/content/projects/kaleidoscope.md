@@ -1,6 +1,6 @@
 +++
 title = "Kaleidoscope"
-date = "2022-06-15T12:00:00-06:00"
+date = "2022-06-15"
 +++
 
 A website meant to endlessly play little video clips in a random order.
