@@ -11,8 +11,9 @@ theme = "terminal"
     # ["orange", "blue", "red", "green", "pink"]
     themeColor = "red"
 
+    # the number of items to show in the top menu of the site
     # if you set this to 0, only submenu trigger will be visible
-    showMenuItems = 2
+    showMenuItems = 4
 
     # show selector to switch language
     showLanguageSelector = false
@@ -44,4 +45,8 @@ theme = "terminal"
             identifier = "about"
             name = "About"
             url = "/about"
+        [[languages.en.menu.main]]
+            identifier = "tech-notes"
+            name = "Tech Notes"
+            url = "/tech-notes"
 
