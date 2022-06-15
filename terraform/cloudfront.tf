@@ -9,7 +9,7 @@ resource "aws_cloudfront_distribution" "website-routing" {
   # S3 destination
   origin {
     origin_id   = "website-bucket"
-    domain_name =  aws_s3_bucket.website-bucket.bucket_regional_domain_name # dont mix this up with 'website_endpoint'
+    domain_name =  aws_s3_bucket.website-bucket.website_endpoint # dont mix this up with 'website_endpoint'
 
     custom_origin_config {
       http_port              = 80
@@ -21,12 +21,12 @@ resource "aws_cloudfront_distribution" "website-routing" {
 
   # This isn't like... the perfect way to handle this.
   # But all the other ways i've tried to do it really just aren't worth the effort.
-  custom_error_response {
-    error_code = 404
-    error_caching_min_ttl = 30
-    response_page_path = "/index.html"
-    response_code = 200
-  }
+#  custom_error_response {
+#    error_code = 404
+#    error_caching_min_ttl = 30
+#    response_page_path = "/index.html"
+#    response_code = 200
+#  }
 
   # Default routing logic. When no other defined behaviors match, this one is used.
   default_cache_behavior {

@@ -34,7 +34,6 @@ theme = "terminal"
     showLastUpdated = false
 #    enableGitInfo = true
 
-    Toc = true # default
 
 
 [languages]
