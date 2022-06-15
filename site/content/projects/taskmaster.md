@@ -1,4 +1,8 @@
-# Task Master
++++
+title = "Task Master"
++++
+
+Single page application for tracking recurring tasks. 
 
 Summary
 --------

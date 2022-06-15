@@ -1,2 +1,0 @@
-# WSG Scraper
-TODO

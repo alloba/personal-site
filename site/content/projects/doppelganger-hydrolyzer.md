@@ -1,4 +1,6 @@
-# Doppelganger Hydrolyzer
++++ 
+title = "Doppelganger Hydrolyzer"
++++
 
 This project has the goal of running analytics on video clips, to find similarities. 
 This is a derivative project of Kaleidoscope and WSG Scraper, and uses the same data for it's operations.

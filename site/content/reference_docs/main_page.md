@@ -9,6 +9,6 @@ sidebar.
 
 ## Links
 
-- [Dynamic Time Warping](dynamic-time-warping.md)
+- [Dynamic Time Warping](projects/personal-landing-site/site/content/reference_docs/dynamic-time-warping.md)
 - [CI/CD](kinsale-cicd-overview/_index.md) Overview (for an old company of mine)
 - [That time I was mad about Timezones](that-rant-about-db-timezones.md)
