@@ -1,7 +1,18 @@
++++
+title = "Dynamic Time Warping"
+date = "2022-06-15T14:09:32-04:00"
+#cover = "cover.jpg"
+tags = ["tech", "image_processing", "kaleidoscope"]
+showFullContent = false
+readingTime = true
+hideComments = false
+description = "Image similarity analysis technique."
++++
+
 # Dynamic Time Warping 
 
 This is relating back to my 
-[Doppelganger Hydrolyzer](projects/personal-landing-site/site/content/projects/project-ideas/doppelganger-hydrolyzer.md) 
+[Doppelganger Hydrolyzer](../../../projects/doppelganger-hydrolyzer/doppelganger-hydrolyzer) 
 project.
 
 ## Summary

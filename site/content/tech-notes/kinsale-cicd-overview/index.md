@@ -1,3 +1,16 @@
++++
+title = "Example GitLab CI/CD Design"
+date = "2022-06-15T14:09:32-04:00"
+#cover = "cover.jpg"
+tags = ["tech", "gitlab", "kinsale", "ci_cd"]
+showFullContent = false
+readingTime = true
+hideComments = false
+description = "An old implementation that I really enjoyed."
++++
+
+
+
 # CI/CD Flow Doc for my Old Team
 
 ### Sections:

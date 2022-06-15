@@ -15,4 +15,4 @@ It's nice to just set it going on a monitor and have it as background noise.
 - [Source Code](https://gitlab.com/alloba/kaleidoscope-combined)
 
 
-![image](../kaleidoscope_sampler.png)
+![image](kaleidoscope_sampler.png)
