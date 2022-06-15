@@ -34,7 +34,7 @@ Site Build:
     - cd ../
   artifacts:
     paths:
-      - '/site/public'
+      - 'site/public'
     expire_in: 1 day
   dependencies:
     - Terraform Apply
