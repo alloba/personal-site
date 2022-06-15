@@ -27,15 +27,14 @@ Site Build:
   stage: build
   only:
     - main
-  image: python:3.9
+  image: registry.gitlab.com/pages/hugo/hugo_extended:latest
   script:
-    - cd generator
-    - pip install -r requirements.txt
-    - python3 main.py
+    - cd site
+    - hugo
     - cd ../
   artifacts:
     paths:
-      - 'build/'
+      - '/site/public'
     expire_in: 1 day
   dependencies:
     - Terraform Apply
@@ -51,6 +50,6 @@ Deploy Site:
     AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
     AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
   script:
-    - aws s3 sync build/site s3://alexlbates.com --delete
+    - aws s3 sync site/public s3://alexlbates.com --delete
   dependencies:
     - Site Build
