@@ -28,17 +28,13 @@ resource "aws_s3_bucket_website_configuration" "example" {
   index_document {
     suffix = "index.html"
   }
+}
 
-#  error_document {
-#    key = "error.html"
-#  }
+resource "aws_s3_bucket_cors_configuration" "example" {
+  bucket = aws_s3_bucket.website-bucket.bucket
 
-#  routing_rule {
-#    condition {
-#      key_prefix_equals = "docs/"
-#    }
-#    redirect {
-#      replace_key_prefix_with = "documents/"
-#    }
-#  }
+  cors_rule {
+    allowed_methods = ["GET"]
+    allowed_origins = ["*"]
+  }
 }
