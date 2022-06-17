@@ -1,4 +1,4 @@
-# Landing Page
+# Welcome
 
 Yo!
 
