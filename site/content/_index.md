@@ -2,9 +2,11 @@
 
 Yo!
 
-This is a landing page for a bunch of stuff I keep going online. 
-Tiny one-off websites, links to code repositories, notes for various things, it's all here.
+This site is for... really anything that I decide I want to publicly make available. 
+There isn't too much of a specific goal beyond that. 
 
-Eventually. Once I migrate everything over. Until then it's a bit sparse.
+So projects, general thoughts, notes about tech topics, whatever. 
 
+Enjoy!
 
+--------------------------------------------------------------------------
