@@ -1,6 +1,7 @@
 +++
 title = "Task Master"
 date = "2022-06-15"
+tags = ["project", "incomplete"]
 +++
 
 Single page application for tracking recurring tasks. 

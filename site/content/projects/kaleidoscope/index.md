@@ -1,6 +1,7 @@
 +++
 title = "Kaleidoscope"
 date = "2022-06-15"
+tags = ["project", "complete"]
 +++
 
 A website meant to endlessly play little video clips in a random order.

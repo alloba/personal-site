@@ -1,6 +1,7 @@
 +++
 title = "Note World (Provisional Title)"
 date = "2022-06-15"
+tags = ["project", "incomplete"]
 +++
 
 Not at all implemented in any way.

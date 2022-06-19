@@ -1,6 +1,7 @@
 +++ 
 title = "Doppelganger Hydrolyzer"
 date = "2022-06-15"
+tags = ["project", "complete"]
 +++
 
 This project has the goal of running analytics on video clips, to find similarities. 
