@@ -48,9 +48,9 @@ theme = "terminal"
             url = "/projects"
             weight = 2
         [[languages.en.menu.main]]
-            identifier = "tech-notes"
-            name = "Tech Notes"
-            url = "/tech-notes"
+            identifier = "notes"
+            name = "Notes"
+            url = "/notes"
             weight = 3
          [[languages.en.menu.main]]
             identifier = "about"
