@@ -2,6 +2,7 @@ baseURL = 'https://alexlbates.com'
 languageCode = 'en-us'
 title = 'Alex Bates'
 theme = "terminal"
+enableEmoji = true
 
 [params]
     # dir name of your main content (default is `content/posts`).
