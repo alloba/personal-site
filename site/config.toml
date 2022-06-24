@@ -56,7 +56,7 @@ enableEmoji = true
         [[languages.en.menu.main]]
             identifier = "food"
             name = "Food"
-            url = "/food"
+            url = "/posts/food"
             weight = 4
          [[languages.en.menu.main]]
             identifier = "about"
