@@ -13,7 +13,7 @@ theme = "terminal"
 
     # the number of items to show in the top menu of the site
     # if you set this to 0, only submenu trigger will be visible
-    showMenuItems = 4
+    showMenuItems = 10
 
     # show selector to switch language
     showLanguageSelector = false
@@ -52,6 +52,11 @@ theme = "terminal"
             name = "Notes"
             url = "/notes"
             weight = 3
+        [[languages.en.menu.main]]
+            identifier = "food"
+            name = "Food"
+            url = "/food"
+            weight = 4
          [[languages.en.menu.main]]
             identifier = "about"
             name = "About"
