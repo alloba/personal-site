@@ -21,7 +21,7 @@ Christ.
 ## Pickled Radishes
 
 ### Ingredients 
-- 1 bunch of radishes (like 6 or 7 radishes I think)
+- 2 bunches of radishes (like 6 or 7 radishes per bunch I think)
 - 1/2 cup apple cider vinegar
 - 1/2 cup sugar
 - 1 cup water 
