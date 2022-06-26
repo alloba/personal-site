@@ -49,4 +49,4 @@ Some people collect cards, I collect pictures of drinks. :sunglasses:
 {{< image src="pepsi-nitro.jpg" alt="pepsi-nitro.jpg"  style="border-radius: 12px; height: 600px" >}}### Pepsi Nitro
 ### Flamin' Hot Mountain Dew  
 This stuff is garbage, dude.   
-{{< image src="moutaindew-flaminghot.jpg" alt="moutaindew-flaminghot.jpg"  style="border-radius: 12px; height: 600px" >}}
+{{< image src="mountaindew-flaminghot.jpg" alt="mountaindew-flaminghot.jpg"  style="border-radius: 12px; height: 600px" >}}
