@@ -1,9 +1,11 @@
 +++
 title = "WSG Scraper"
 date = "2022-06-15"
-tags = ["project", "complete"]
+tags = ["project", "complete", "archived"]
+draft = true
 +++
 
+This project is archived. I view it as functionally complete, and deprecated in favor of Archivist.
+The purpose is exactly the same as Archivist so if you want to get more context, look at that project. 
 
-Related to Kaleidoscope. TODO more information.
-
+[Repository Link](https://gitlab.com/alloba/wsg_scraper)
