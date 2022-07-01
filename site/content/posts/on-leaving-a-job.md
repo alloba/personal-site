@@ -7,6 +7,7 @@ description = "A cheap way to measure growth."
 showFullContent = false
 readingTime = false
 hideComments = false
+draft = true
 +++
 
 There are always strong feelings when leaving a place you have worked at. 
