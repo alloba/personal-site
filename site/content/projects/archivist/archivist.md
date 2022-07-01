@@ -18,7 +18,7 @@ This is the thing that manages finding new content for one of my other projects,
 It's taken the place of my old WSG_Scraper, which had the same purpose but with fewer features. 
 
 The primary use case is to access specified 4Chan boards and look for all WebM files in threads that 
-match a search criteria, and dump them into S3. But, it's designed to by able to easily hook into other inputs/outputs.
+match a search criteria, and dump them into S3. But, it's designed to be able to easily hook into other inputs/outputs.
 Which is pretty much just local file storage and S3. 
 
 An important bit of functionality that gets layered on top of the simple "download and copy" is that 
