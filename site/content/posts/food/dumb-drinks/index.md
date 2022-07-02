@@ -52,3 +52,6 @@ Some people collect cards, I collect pictures of drinks. :sunglasses:
 ### Flamin' Hot Mountain Dew  
 This stuff is garbage, dude.   
 {{< image src="mountaindew-flaminghot.jpg" alt="mountaindew-flaminghot.jpg"  style="border-radius: 12px; height: 600px" >}}
+### Sparkling Hop Tea  
+All the gross beer flavor with none of the alcohol. Wack.
+{{< image src="hop-tea.jpg" alt="hop-tea.jpg"  style="border-radius: 12px; height: 600px" >}}
