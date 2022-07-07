@@ -22,6 +22,8 @@ Some people collect cards, I collect pictures of drinks. :sunglasses:
 {{< image src="gfuel-sonic.jpg" alt="gfuel-sonic.jpg"  style="border-radius: 12px; height: 600px" >}}
 ### G-Fuel Tetris
 {{< image src="gfuel-tetris.jpg" alt="gfuel-tetris"  style="border-radius: 12px; height: 600px" >}}
+### G-Fuel Sour Chug Rug
+{{< image src="gfuel-chugrug.jpg" alt="gfuel-chugrug"  style="border-radius: 12px; height: 600px" >}}
 
 ### Ghost Strawberry Bubblicious
 {{< image src="ghost-bubblicious.jpg" alt="ghost-bubblicious.jpg"  style="border-radius: 12px; height: 600px" >}}
@@ -55,3 +57,8 @@ This stuff is garbage, dude.
 ### Sparkling Hop Tea  
 All the gross beer flavor with none of the alcohol. Wack.
 {{< image src="hop-tea.jpg" alt="hop-tea.jpg"  style="border-radius: 12px; height: 600px" >}}
+### Shaka Guava Gingerblossom
+{{< image src="shaka-guavaginger.jpg" alt="shaka-guavaginger.jpg"  style="border-radius: 12px; height: 600px" >}}
+### Flying Cauldron Butterscotch Beer (non-alcoholic)
+{{< image src="flying-cauldron-butterscotch.jpg" alt="flying-cauldron-butterscotch.jpg"  style="border-radius: 12px; height: 600px" >}}
+
