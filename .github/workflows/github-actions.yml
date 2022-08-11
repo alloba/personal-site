@@ -1,0 +1,24 @@
+name: Deploy to Remote
+on:
+  push:
+    branches:
+      - main
+
+
+jobs:
+  TerraformApply:
+    runs-on: ubuntu-latest
+    container: hashicorp/terraform:latest
+    steps:
+      - name: Set Directory
+        run: cd terraform
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v1
+      - name: Terraform Init
+        run: terraform init
+      - name: Apply Terraform
+        run: terraform apply --auto-approve
+
+#  SiteBuild:
+#    klakegg/hugo:latest
+#  Deploy:
