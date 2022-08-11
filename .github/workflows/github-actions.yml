@@ -1,8 +1,8 @@
 name: Deploy to Remote
 on:
+  workflow_dispatch
   push:
-    branches:
-      - main
+    branches: [main]
 
 
 jobs:
