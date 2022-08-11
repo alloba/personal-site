@@ -22,14 +22,12 @@ jobs:
         uses: hashicorp/setup-terraform@v1
 
       - name: Terraform Init
-        run: |
-          cd terraform
-          terraform init
+        working-directory: terraform
+        run: terraform init
 
       - name: Apply Terraform
-        run: |
-          cd terraform 
-          terraform apply --auto-approve
+        working-directory: terraform
+        run: terraform apply --auto-approve
 
 #  SiteBuild:
 #    klakegg/hugo:latest
