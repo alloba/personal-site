@@ -12,7 +12,7 @@ env:
 jobs:
   TerraformApply:
     runs-on: ubuntu-latest
-    container: hashicorp/terraform:latest
+#    container: hashicorp/terraform:latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
