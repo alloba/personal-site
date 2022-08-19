@@ -9,7 +9,7 @@ hideComments = false
 tags = ["project", "complete"]
 +++
 
-**[Project Link](https://gitlab.com/alloba/archivisit)**
+** [Project Link](https://github.com/alloba/archivist) **
 
 This program is focused on copying files found in one location and putting them in another. 
 Pretty simple stuff. 

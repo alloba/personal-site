@@ -13,7 +13,7 @@ This project probably holds the record for the most used thing I have made in my
 It's nice to just set it going on a monitor and have it as background noise.
 
 - [Site Link](http://kaleidoscope.alexlbates.com)
-- [Source Code](https://gitlab.com/alloba/kaleidoscope-combined)
+- [Source Code](https://github.com/alloba/kaleidoscope)
 
 
 ![image](kaleidoscope_sampler.png)
