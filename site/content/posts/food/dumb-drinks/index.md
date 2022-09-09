@@ -31,6 +31,14 @@ Some people collect cards, I collect pictures of drinks. :sunglasses:
 {{< image src="ghost-orangecream.jpg" alt="ghost-orangecream.jpg"  style="border-radius: 12px; height: 600px" >}}
 ### Ghost Watermelon Warheads
 {{< image src="ghost-warheads-watermelon.jpg" alt="ghost-warheads-watermelon.jpg"  style="border-radius: 12px; height: 600px" >}}
+### Ghost Swedish Fish 
+{{< image src="ghost-swedishfish.jpg" alt="ghost-swedishfish.jpg"  style="border-radius: 12px; height: 600px" >}}
+
+### C4 Strawberry Starburst
+{{< image src="c4-starburst-strawberry.jpg" alt="c4-starburst-strawberry.jpg"  style="border-radius: 12px; height: 600px" >}}
+### C4 Skittles 
+{{< image src="c4-skittles.jpg" alt="c4-skittles.jpg"  style="border-radius: 12px; height: 600px" >}}
+
 
 ### Mountain Dew Energy - Strawberry Melon Spark
 {{< image src="mountaindew-energy-strawberrymelon.jpg" alt="mountaindew-energy-strawberrymelon.jpg"  style="border-radius: 12px; height: 600px" >}}
