@@ -1,10 +1,11 @@
 +++
 title = "Valheim Server"
-date = "2023-01-08T18:00:00-04:00"
+date = "2023-01-01T16:00:00-04:00"
+cover = ""
 showFullContent = false
 readingTime = true
 hideComments = false
-description = "Started a Valheim Server"
+description = "Started a Valheim Server! `valheim.alexlbates.com`"
 +++
 
 I've set up a Valheim server! 
@@ -12,7 +13,7 @@ I've set up a Valheim server!
 The connection string is `valheim.alexlbates.com`.  
 Ask me directly for the password.
 
-## Infrastructure 
+ Infrastructure 
 
 I should make a more detailed post about it, but I'm lazy. 
 
