@@ -36,7 +36,7 @@ The rest of this post is going to focus on the technical details around hosting 
 ## The Valheim Container
 
 A lot of the work of actually running a game server was handled excellently by the chosen Docker image. 
-The `lloesche/valheim-server` image had everything required to run a self-updating valheim server, 
+The `lloesche/valheim-server` image had everything required to run a self-updating Valheim server, 
 along with support for server status reports and the most common mods for the game. 
 
 I consider it a shining example of what a containerized application should be, in terms of usability. 
@@ -146,7 +146,7 @@ Some hiccups while figuring out the correct instance size, but very little downt
 And even more importantly, no lost game data. 
 
 The cost was higher than if I had a personal computer running the server, but it wasn't the worst in the world. 
-$2 a day compared to the ~$0.5 a day that a dedicated valheim hosting service was offering. 
+$2 a day compared to the ~$0.5 a day that a dedicated Valheim hosting service was offering. 
 
 ## Closing
 
@@ -157,12 +157,12 @@ There were some fiddly moments during the setup and while figuring out memory is
 I went into this viewing it as a way to knock some rust off of my Terraform/AWS skills, so getting slowed down by issues wasn't very frustrating. 
 It also gives me a little bit of a baseline going forward for if there is ever anything else that needs to be hosted in a similar way. 
 
-I obviously wouldn't recommend the overal experience for just some random person that wanted to play a game with friends, 
+I obviously wouldn't recommend the overall experience for just some random person that wanted to play a game with friends, 
 but for someone interested in basic cloud infrastructure I think it was a good little project to take on. 
 
 The fact that there was an end always in sight helped a lot. 
 It allowed much more of a focus on "does it work for now", instead of "is this a good long-term design". 
-Plus I do enjoy a good sunsetting plan. 
+Plus I do enjoy a good sun-setting plan. 
 To be able to say that the server is shutting down on X day, and then to provide save data backups until Y day, and just have it be accepted - bliss. 
 
 ![valheim tower sunset](/valheim/valheim_2.jpg)
