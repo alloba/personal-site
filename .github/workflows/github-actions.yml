@@ -1,64 +1,62 @@
-name: Deploy to Remote
-on:
-  - workflow_dispatch
-  - push
-#  push:
-#    branches: [main]
+#name: Deploy to Remote
+#on:
+#  - workflow_dispatch
+#  - push
 
 
-jobs:
-  TerraformApply:
-    env:
-      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      AWS_REGION: ${{ secrets.AWS_REGION }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v1
-
-      - name: Terraform Init
-        working-directory: terraform
-        run: terraform init
-
-      - name: Apply Terraform
-        working-directory: terraform
-        run: terraform apply --auto-approve
-
-  SiteBuild:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Hugo setup
-        uses: peaceiris/actions-hugo@v2
-      - name: Build Site
-        working-directory: site
-        run: hugo
-      - name: Store site artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: website
-          path: site/public
-
-  Deploy:
-    runs-on: ubuntu-latest
-    needs: [TerraformApply, SiteBuild]
-    steps:
-      - name: Download site artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: website
-
-      - name: Init AWS
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ secrets.AWS_REGION }}
-
-      - name: Deploy To S3
-        run: aws s3 sync ./ s3://alexlbates.com --delete
+#jobs:
+#  TerraformApply:
+#    env:
+#      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#      AWS_REGION: ${{ secrets.AWS_REGION }}
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Checkout
+#        uses: actions/checkout@v3
+#
+#      - name: Setup Terraform
+#        uses: hashicorp/setup-terraform@v1
+#
+#      - name: Terraform Init
+#        working-directory: terraform
+#        run: terraform init
+#
+#      - name: Apply Terraform
+#        working-directory: terraform
+#        run: terraform apply --auto-approve
+#
+#  SiteBuild:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Checkout
+#        uses: actions/checkout@v3
+#      - name: Hugo setup
+#        uses: peaceiris/actions-hugo@v2
+#      - name: Build Site
+#        working-directory: site
+#        run: hugo
+#      - name: Store site artifact
+#        uses: actions/upload-artifact@v3
+#        with:
+#          name: website
+#          path: site/public
+#
+#  Deploy:
+#    runs-on: ubuntu-latest
+#    needs: [TerraformApply, SiteBuild]
+#    steps:
+#      - name: Download site artifact
+#        uses: actions/download-artifact@v3
+#        with:
+#          name: website
+#
+#      - name: Init AWS
+#        uses: aws-actions/configure-aws-credentials@v1
+#        with:
+#          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#          aws-region: ${{ secrets.AWS_REGION }}
+#
+#      - name: Deploy To S3
+#        run: aws s3 sync ./ s3://alexlbates.com --delete
