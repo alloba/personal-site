@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "website-bucket" {
-  bucket = "alexlbates.com"
+  bucket = var.s3_bucket_name
 }
 
 resource "aws_s3_bucket_policy" "website-policy" {
@@ -22,15 +22,15 @@ resource "aws_s3_bucket_policy" "website-policy" {
   })
 }
 
-resource "aws_s3_bucket_website_configuration" "example" {
+resource "aws_s3_bucket_website_configuration" "web_config" {
   bucket = aws_s3_bucket.website-bucket.bucket
 
   index_document {
-    suffix = "index.html"
+    suffix = var.cloudfront_distribution_default_root_object # generally should be something like index.html
   }
 }
 
-resource "aws_s3_bucket_cors_configuration" "example" {
+resource "aws_s3_bucket_cors_configuration" "cors" {
   bucket = aws_s3_bucket.website-bucket.bucket
 
   cors_rule {
