@@ -13,7 +13,7 @@ markup:
 
 params:
   description: 'Oft-Ignored Site'
-  mainSections: ['posts']
+  mainSections: ['posts', 'pages']
   featuredImageField: image #frontmatter tag to look for when pulling the featured image from pages
 
   sidebar:
