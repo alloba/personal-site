@@ -7,15 +7,11 @@ information goes when I don't have a better place for it.
 Notes/project information/blog-ish stuff/links to other projects. 
 That kind of thing. 
 
-I am forever fiddling around with how I want this site to look and behave.
-So look forward to that I guess. 
+I am forever fiddling around with how I want this site exist.
 
 ## Tech Used
 
-- Hugo
-  - The base theme used is [Terminal](https://github.com/panr/hugo-theme-terminal).  
-    This theme was downloaded directly - it will have to be fully overwritten if 
-    an update is desired.
+- Hugo - with a manually added theme (named Stack)
 - Terraform
 - AWS (S3/Cloudfront)
 
