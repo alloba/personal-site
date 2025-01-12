@@ -1,5 +1,8 @@
-# Welcome
-
-The newest posts are listed below, and major categories of content are listed in the menu. 
-
---------------------------------------------------------------------------
+---
+menu: 
+    main: 
+        name: Home
+        weight: 1
+        params: 
+            icon: home
+---

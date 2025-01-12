@@ -1,0 +1,29 @@
+baseURL: 'https://alexlbates.com'
+languageCode: 'en-us'
+title: 'Alex Bates'
+subtitle: asdf
+enableEmoji: true
+
+theme: 'hugo-theme-stack/v3'
+
+markup:
+  tableOfContents:
+    startLevel: 2 #default 2
+    endLevel: 5 # default 3
+
+params:
+  description: 'Oft-Ignored Site'
+  mainSections: ['posts']
+  featuredImageField: image #frontmatter tag to look for when pulling the featured image from pages
+
+  sidebar:
+    avatar:
+      enabled: true
+      local: true
+      src: img/profile.jpg
+    subtitle:  'Dusty old website'
+  widgets:
+    page:
+      - type: 'toc'
+    homepage:
+      - type: search
