@@ -29,6 +29,7 @@ jobs:
         run: terraform apply --auto-approve
 
   build:
+    needs: [terraform-deploy]
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.140.2
@@ -42,7 +43,7 @@ jobs:
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
-        run: hugo
+        run: cd site && hugo
 
       - name: AWS CLI Setup
         uses: aws-actions/configure-aws-credentials@v4
