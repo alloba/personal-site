@@ -1,3 +1,7 @@
+---
+hidden: true 
+---
+
 # Oracle DB Timezone Clarification
 
 Time and software development mix like oil and water, in my mind.
