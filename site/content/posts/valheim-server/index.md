@@ -1,7 +1,7 @@
 ---
 title: "Valheim Server Postmortem"
 date: "2023-03-17T05:00:00-04:00"
-image: "/valheim/valheim_1.jpg"
+image: "/posts/valheim-server/images/valheim_1.jpg"
 readingTime: true
 description: "How did running a server for friends go?"
 toc: true
